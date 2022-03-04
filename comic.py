@@ -27,3 +27,9 @@ if option:
     
     for link in links:
         st.image(link)
+        
+st.markdown('''
+                <style>
+                div[data-testid="stToolbar"] {visibility: hidden;}
+                </style>
+                ''', unsafe_allow_html=True)        
