@@ -35,7 +35,7 @@ chapters = get_chapters(comic)
 chapter = st.selectbox('請選擇章節', chapters, key="chapter")
 
 if chapter:
-    links = get_pages(st.session_state.chapter)
+    links = get_pages(chapter)
     for link in links:
         st.image(link if link.startswith('http') else r'https://' + link.lstrip('/'))
 
@@ -43,7 +43,7 @@ if chapter:
 col1, col2 = st.columns(2)
 with col1:
     if st.button('上一章'):
-        st.session_state.chapter = str(int(st.session_state.chapter) -1) 
+        chapter = str(int(chapter) -1) 
 with col2:
     if st.button('下一章'):
         pass
