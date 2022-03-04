@@ -32,10 +32,10 @@ comics= {'海賊王':1, '一拳超人':51, '王者天下':104, '新網球王子'
 comic = st.selectbox('請選擇漫畫', comics)
 chapters = get_chapters(comic)
 
-chapter  = st.selectbox('請選擇章節', chapters)
+chapter = st.selectbox('請選擇章節', chapters, key="chapter")
 
 if chapter:
-    links = get_pages(chapter)
+    links = get_pages(st.session_state.chapter)
     for link in links:
         st.image(link if link.startswith('http') else r'https://' + link.lstrip('/'))
 
@@ -43,7 +43,7 @@ if chapter:
 col1, col2 = st.columns(2)
 with col1:
     if st.button('上一章'):
-        pass
+        st.session_state.chapter = str(int(st.session_state.chapter) -1) 
 with col2:
     if st.button('下一章'):
         pass
