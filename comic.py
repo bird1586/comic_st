@@ -25,7 +25,7 @@ def get_pages(chapter):
     return links
     
 
-st.set_option('wideMode' , True)    
+st.set_page_config(layout="wide") 
     
 session = HTMLSession()
 comics= {'海賊王':1, '一拳超人':51, '王者天下':104, '新網球王子':32, '名偵探柯南':47}
