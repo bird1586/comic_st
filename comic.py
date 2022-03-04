@@ -19,7 +19,7 @@ def get_chapters(comic):
 
 @st.cache
 def get_pages(chapter):
-    r = session.get(r'https://www.omyschool.com' + chapters[option])
+    r = session.get(r'https://www.omyschool.com' + chapters[chapter])
     links = r.html.find("amp-img[width='580']")
     links = [i.attrs['src'] for i in links]
     return links
