@@ -40,13 +40,13 @@ if chapter:
         st.image(link if link.startswith('http') else r'https://' + link.lstrip('/'))
 
         
-col1, col2 = st.columns(2)
-with col1:
-    if st.button('上一章'):
-        chapter = str(int(chapter) -1) 
-with col2:
-    if st.button('下一章'):
-        pass
+#col1, col2 = st.columns(2)
+#with col1:
+#    if st.button('上一章'):
+#        chapter = str(int(chapter) -1) 
+#with col2:
+#    if st.button('下一章'):
+#        pass
         
        
 st.markdown('''
