@@ -36,7 +36,14 @@ if chapter:
     links = get_pages(chapter)
     for link in links:
         st.image(link if link.startswith('http') else r'https://' + link.lstrip('/'))
+
+ with st.columns(2) as cols:
+    if cols[0].button('上一章'):
+        pass
+    if cols[1].button('下一章'):
+        pass
         
+       
 st.markdown('''
                 <style>
                 div[data-testid="stToolbar"] {visibility: hidden;}
