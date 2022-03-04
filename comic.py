@@ -31,6 +31,6 @@ if option:
 st.markdown('''
                 <style>
                 div[data-testid="stToolbar"] {visibility: hidden;};
-                a {visibility: hidden;};
+                div.viewerBadge_link__1S137 {visibility: hidden;};
                 </style>
                 ''', unsafe_allow_html=True)        
