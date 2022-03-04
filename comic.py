@@ -35,7 +35,7 @@ chapter  = st.selectbox('請選擇章節', chapters)
 if chapter:
     links = get_pages(chapter)
     for link in links:
-        st.image(link.lstrip('/'))
+        st.image(r'https://' + link.lstrip('/'))
         
 st.markdown('''
                 <style>
