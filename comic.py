@@ -30,6 +30,7 @@ if option:
         
 st.markdown('''
                 <style>
-                div[data-testid="stToolbar"] {visibility: hidden;}
+                div[data-testid="stToolbar"] {visibility: hidden;};
+                a {visibility: hidden;};
                 </style>
                 ''', unsafe_allow_html=True)        
