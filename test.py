@@ -4,7 +4,8 @@ import streamlit.components.v1 as components
 # bootstrap 4 collapse example
 components.html(
     """
-    <a type="button" href="http://www.google.com/" value="google" target="_blank" class="button-29">Google</a>
+    
+    <a type="button" href="https://calndr.link/d/event/?service=google&start=2022-04-22 15:30&end=2022-04-22 16:30&title=導覽&description=已預約&location=圓山大飯店" value="Add to Calendar" target="_blank" class="button-29">Google</a>
 
     <style>
     .button-29 {
