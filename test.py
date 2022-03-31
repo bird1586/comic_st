@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.write(f'''
-    <a target="_self" href="https://eox.at">
+    <a target="_blank" href="https://eox.at">
         <button>
             Please login via Google
         </button>
