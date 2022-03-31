@@ -53,5 +53,5 @@ components.html(
 }
 </style>
     """,
-    height=600,
+    
 )
