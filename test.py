@@ -1,6 +1,6 @@
-import streamlit as st
+import streamlit.components.v1 as components
 
-st.write(f'''
+components.html(f'''
     <a type="button" href="http://www.google.com/" value="google" target="_blank" class="button-29"></a>
 
 <style>
@@ -49,6 +49,5 @@ st.write(f'''
   transform: translateY(2px);
 }
 </style>
-    ''',
-    unsafe_allow_html=True
+    '''
 )
