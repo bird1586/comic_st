@@ -1,3 +1,11 @@
-from link_button import link_button
+import streamlit as st
 
-link_button('Click Me!', 'https://docs.streamlit.io/en/stable/')
+st.write(f'''
+    <a target="_self" href="https://eox.at">
+        <button>
+            Please login via Google
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
